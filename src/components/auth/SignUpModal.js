@@ -12,7 +12,7 @@ const mapStateToProps = (state) => {
 
 function SignUpModal(props) {
     return (
-        <BaseModal title="Create an account" show={props.show} handleClose={props.handleClose}>
+        <BaseModal title="Crear una cuenta nueva" show={props.show} handleClose={props.handleClose}>
             <SignUpForm successMessage={
                 <Fragment>
                     Cuenta creada con éxito<Link to='/signin' onClick={props.handleClose} >Iniciá sesión</Link>

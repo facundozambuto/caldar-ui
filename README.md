@@ -98,7 +98,7 @@ su nombre.
 código y charlando sobre el flujo de datos en la aplicación.
 
 
-### Colección / Entidad / 📋
+## Colección / Entidad / 📋
 
 Utilizando MongoDB, Atlas y Mockaroo se constituyó una base de datos no relacional con una colección de "Boilers" con la que realizó un CRUD con React y diferentes librerías.
 
@@ -115,7 +115,7 @@ El formato de dicha colección se puede ver en el siguiente ejemplo:
 }
 ```
 
-### Documentación de API :notebook_with_decorative_cover:
+## Documentación de API :notebook_with_decorative_cover:
 
 En el siguiente link (repositorio del parcial, rama "develop") puede encontrarse la colección de Postman con la API documentado y con data para realizar pruebas. La URL de cada request ya está actualizada con la desplegada en Heroku:
 
@@ -123,10 +123,19 @@ https://github.com/facundozambuto/parcialMCGA2021/blob/develop/api/resources/Par
 
 ## Instalación 📦
 
-Luego de descargar el repo, se deben ejecutar los siguientes comandos:
-
-* npm install
-* npm run dev
+1. Clonar el repo
+   ```sh
+   git clone https://github.com/facundozambuto/caldar-ui
+   ```
+2. Installar paquetes NPM
+   ```sh
+   npm install (Versión de NodeJS v14.17.5)
+   ```
+3. Run
+   ```sh
+    npm run dev
+   ```
+4. Utilizar admin/admin como cuenta de testing para loguearse.
 
 
 ## Despliegue 📦

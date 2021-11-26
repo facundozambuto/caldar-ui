@@ -1,14 +1,14 @@
 import React, { useEffect, Fragment, useState } from 'react'
 import { connect } from 'react-redux'
-import UserRoute from '../shared/UserRoute';
-import { getAllBoilers } from '../../redux/actions/boilersActions';
-import Spinner from '../shared/Spinner';
+import UserRoute from '../../shared/UserRoute';
+import { getAllBoilers } from '../../../redux/actions/boilersActions';
+import Spinner from '../../shared/Spinner';
 import { Button, Container, Row, Col } from 'react-bootstrap';
-import AddBoilerModal from '../boilers/AddBoilerModal';
-import DeleteBoilerModal from '../boilers/DeleteBoilerModal';
+import AddBoilerModal from '../../boilers/AddBoilerModal';
+import DeleteBoilerModal from '../../boilers/DeleteBoilerModal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencilAlt, faTrash, faCog } from '@fortawesome/fontawesome-free-solid';
-import styles from '../containers/Boilers.module.css';
+import styles from './Boilers.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import moment from "moment";
 

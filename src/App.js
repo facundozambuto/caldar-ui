@@ -9,7 +9,7 @@ import MainContainer from './components/shared/MainContainer';
 import BuildingModule from './components/shared/BuildingModule';
 import Home from './components/containers/Home';
 import SignIn from './components/containers/SignIn';
-import Boilers from './components/containers/Boilers';
+import Boilers from './components/containers/Boilers/Boilers';
 
 class App extends React.Component {
 

@@ -1,12 +1,12 @@
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import { SidebarData } from './SidebarData';
+import { SidebarData } from '../SidebarData';
 import './Navbar.css';
 import { IconContext } from 'react-icons';
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { logout } from '../../redux/actions/authActions';
+import { logout } from '../../../redux/actions/authActions';
 import { Button } from 'react-bootstrap';
 
 const mapStateToProps = (state) => {
@@ -51,8 +51,8 @@ function Navbar(props) {
 							return (
 							<li key={index} className={item.cName}>
 								<Link to={item.path}>
-								{item.icon}
-								<span>{item.title}</span>
+									{item.icon}
+									<span>{item.title}</span>
 								</Link>
 							</li>
 							);

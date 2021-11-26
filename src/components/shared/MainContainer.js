@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Navbar from './Navbar/Navbar';
+import Footer from './Footer/Footer';
 
 function MainContainer(props){
     return(

@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import BaseModal from '../shared/BaseModal';
 import { addBoiler, editBoiler, clearBoiler } from '../../redux/actions/boilersActions';
-import { isNullOrEmty } from '../../utils/helpers/index';
+import { isNegativeNumber, isNullOrEmty, isPastDate } from '../../utils/helpers/index';
 import { Form, Button, Alert, Col, Row } from 'react-bootstrap';
 import moment from "moment";
 
@@ -47,6 +47,13 @@ function AddBoilerModal(props) {
 
         const formPropertiesValidations = {
             "Alias": !isNullOrEmty(formBoiler.boilerId),
+            "Capacidad": !isNullOrEmty(formBoiler.capacity),
+            "Capacidad": !isNegativeNumber(formBoiler.capacity),
+            "Marca": !isNullOrEmty(formBoiler.brand),
+            "Temperatura": !isNullOrEmty(formBoiler.temperature),
+            "Temperatura": !isNegativeNumber(formBoiler.temperature),
+            "Fecha de Fabricación": !isNullOrEmty(formBoiler.madeDate),
+            "Fecha de Fabricación": isPastDate(formBoiler.madeDate)
         };
 
         const errorMessagesArray = Object.keys(formPropertiesValidations).filter(propertyName => {
@@ -153,20 +160,23 @@ function AddBoilerModal(props) {
                     </Col>
                 </Row>
                 
-                {!props.error && props.message &&
-                    <Alert variant="success">
-                        {props.message}
-                    </Alert>
-                }
-                {(formBoiler.errorMessages.length > 0 || props.error) &&
-                    <Fragment>
-                        {formBoiler.errorMessages.length > 0 && formBoiler.errorMessages.map((errorMsg, i) =>
-                            <Alert variant="danger" key={`inavlid${i}`} >{errorMsg} </Alert>
-                        )}
+                <Row className="mt-5 ml-2">
+                    {!props.error && props.message &&
+                        <Alert variant="success">
+                            {props.message}
+                        </Alert>
+                    }
+                    {(formBoiler.errorMessages.length > 0 || props.error) &&
+                        <Fragment>
+                            {formBoiler.errorMessages.length > 0 && formBoiler.errorMessages.map((errorMsg, i) =>
+                                <Alert variant="danger" key={`inavlid${i}`} >{errorMsg} </Alert>
+                            )}
 
-                        {props.error && props.message && <Alert variant="danger">{props.message}</Alert>}
-                    </Fragment>
-                }
+                            {props.error && props.message && <Alert variant="danger">{props.message}</Alert>}
+                        </Fragment>
+                    }
+                </Row>
+                
             </Form>
         </BaseModal>
     );
