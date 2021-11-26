@@ -12,8 +12,8 @@ function Footer(props){
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6">
                             <ul class="list-unstyled quick-links">
-                                <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Repo Github</a></li>
-                                <li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Heroku</a></li>
+                                <li><a href="https://github.com/facundozambuto/caldar-ui"><i class="fa fa-angle-double-right"></i>Repo Github</a></li>
+                                <li><a href="https://caldar-ui.herokuapp.com/"><i class="fa fa-angle-double-right"></i>Heroku</a></li>
                             </ul>
                         </div>
                     </div>

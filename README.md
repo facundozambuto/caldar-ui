@@ -105,6 +105,7 @@ Utilizando MongoDB, Atlas y Mockaroo se constituyó una base de datos no relacio
 El formato de dicha colección se puede ver en el siguiente ejemplo:
 
 ```
+{
   "boilerId": "Caldera X",
   "brand": "Jit Calderas",
   "temperature": 258,
@@ -125,12 +126,12 @@ https://github.com/facundozambuto/parcialMCGA2021/blob/develop/api/resources/Par
 Luego de descargar el repo, se deben ejecutar los siguientes comandos:
 
 * npm install
-* npm start
+* npm run dev
 
 
 ## Despliegue 📦
 
-El deployment fue realizado en Heroku y se puede acceder a la API a través de la URL https://mcga-parcial2021-api.herokuapp.com/
+El deployment fue realizado en Heroku y se puede acceder a la UI a través de la URL https://caldar-ui.herokuapp.com/
 
 ## Construido con 🛠️
 
@@ -152,7 +153,7 @@ También se utilizó:
 
 ## Versionado 📌
 
-Se creo un repositorio en GitHub https://github.com/facundozambuto/parcialMCGA2021 con varias ramas siendo las principales "develop" la cual es la desplegada en Heroku y "feature/employees" que contiene el commit principal.
+Se creo un repositorio en GitHub https://github.com/facundozambuto/caldar-ui con varias ramas siendo las principales "develop" la cual es la desplegada en Heroku.
 
 ## Autor ✒️
 
