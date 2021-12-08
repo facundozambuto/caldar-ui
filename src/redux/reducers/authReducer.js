@@ -91,7 +91,7 @@ function authReducer(state = authState, action) {
                 isAuth: true,
                 isAccessVerified: true,
                 user: action.payload.user,
-                token: action.payload.token,
+                token: action.payload.data.access_token,
                 signIn: {
                     isLoading: false,
                     error: false,

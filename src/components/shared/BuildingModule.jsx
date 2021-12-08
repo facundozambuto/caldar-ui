@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import UserRoute from '../shared/UserRoute';
+import UserRoute from './UserRoute';
 
 function BuildingModule(props){
     return(

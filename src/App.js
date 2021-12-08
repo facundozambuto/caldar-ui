@@ -10,6 +10,7 @@ import BuildingModule from './components/shared/BuildingModule';
 import Home from './components/containers/Home';
 import SignIn from './components/containers/SignIn';
 import Boilers from './components/containers/Boilers/Boilers';
+import Technicians from './components/containers/Technicians/Technicians';
 
 class App extends React.Component {
 
@@ -24,6 +25,7 @@ class App extends React.Component {
                 <Route exact path="/home" component={Home} />
                 <Route exact path="/signin" component={SignIn} />
                 <Route exact path="/boilers" component={Boilers} />
+                <Route exact path="/technicians" component={Technicians} />
                 <Route component={BuildingModule} />
               </Switch>
             </MainContainer>

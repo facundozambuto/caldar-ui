@@ -16,7 +16,6 @@ import { API_URL, DEFAULT_ERROR_FETCH_MESSAGE } from '../../config';
 
 let defaultErrorMessage = DEFAULT_ERROR_FETCH_MESSAGE;
 
-
 export function getAllBoilers() {
     return (dispatch) => {
         dispatch({ type: BOILERS_PENDING, payload: {} });

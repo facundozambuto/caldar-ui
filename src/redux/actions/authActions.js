@@ -55,7 +55,7 @@ export function signIn({ username, password }) {
                     return dispatch({ type: AUTH_USER_SIGNIN_ERROR, payload: { message: response.message } });
                 }
                 localStorage.setItem('appSessionId', response.token);
-                dispatch({ type: AUTH_USER_SIGNIN_SUCCESS, payload: { message: response.message, data: response.user } });
+                dispatch({ type: AUTH_USER_SIGNIN_SUCCESS, payload: { message: response.message, data: { access_token: response.token, user: response.user } } });
 
             })
             .catch(error => {
