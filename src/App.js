@@ -11,6 +11,7 @@ import Home from './components/containers/Home';
 import SignIn from './components/containers/SignIn';
 import Boilers from './components/containers/Boilers/Boilers';
 import Technicians from './components/containers/Technicians/Technicians';
+import Services from './components/containers/Services/Services';
 
 class App extends React.Component {
 
@@ -26,6 +27,7 @@ class App extends React.Component {
                 <Route exact path="/signin" component={SignIn} />
                 <Route exact path="/boilers" component={Boilers} />
                 <Route exact path="/technicians" component={Technicians} />
+                <Route exact path="/services" component={Services} />
                 <Route component={BuildingModule} />
               </Switch>
             </MainContainer>
