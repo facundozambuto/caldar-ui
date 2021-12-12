@@ -22,7 +22,7 @@ const initState = {
         error: false,
         message: null,
         data: {
-            notes:[]
+            
         }
     }
 }

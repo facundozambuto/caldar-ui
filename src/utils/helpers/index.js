@@ -18,3 +18,14 @@ export const isNegativeNumber = (property) => {
     }
     return false;
 }
+
+export const parseServicesDate = (services) => {
+    if (services && services.length > 0) {
+        services.forEach(serv => {
+            serv.start = new Date(serv.start);
+            serv.end = new Date(serv.end);
+        });
+    }
+
+    return services;
+}
